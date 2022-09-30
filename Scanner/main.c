@@ -1,0 +1,58 @@
+//Autor: Oscar Jahir Valdés Caballero
+//Última modificación: 30 de marzo de 2022
+//Descripción: Este programa es la función principal del analizador lexico, su output es un archivo con el nombre "index.html" el cual resalta las expresiones regulares encontradas en el archivo "text.txt".
+
+#include <stdio.h>
+#include <string.h>
+
+
+//Funciones y punteros del archivo lex.yy.c generado por flex
+extern int yylex();
+extern int yylineno;
+extern char *yytext;
+
+char header[] = //Encabezado del archivo html
+"<!DOCTYPE HTML>\n"
+"<html>\n"
+"  <head>\n"
+"    <link rel=\"stylesheet\" href=\"../../Scanner/styles.css\">\n"
+"  </head>\n"
+"  <body>\n";
+
+char footer[] = //Pie del archivo html
+"  </body>\n"
+"</html>";
+
+int main(int argc, char **argv){
+    char file_name_output[99];
+    strcpy(file_name_output, argv[1]);
+    //printf("Voy a guardar el archivo con el nombre: %s\n", file_name_output);
+
+    int ntoken; //Entero que identifica el tipo de token de acuerdo a la línea en que se encuentra la expresión regular que lo genera en el archivo "patterns.txt".
+    FILE *fptr; //Puntero al archivo output.
+    fptr = fopen(file_name_output, "w"); //Se abre el archivo html en modo escritura.
+    fprintf(fptr, "%s", header); //Se escribe en el encabezado del archivo.
+    
+
+    ntoken = yylex(); //Se lee el primer token del archivo "text.txt".
+    while (ntoken) //Mientras el lexer siga generando tokens.
+    {
+        if (strcmp(yytext, "\n")==0)
+        {
+            //Para introducir saltos de línea es necesario sustituir el carácter salto de línea por la etiqueta html <br>.
+            fprintf(fptr, "    <br>\n");
+        }else
+        {
+            //Si no se encuentra un salto de línea se genera una etiqueta html <span> con los contenidos del token y una clase definida por el tipo de token, el cual se obtiene a través de la función yylex.
+            fprintf(fptr, "    <span class=\"token-%d\">%s</span>\n", ntoken, yytext);
+        }
+        
+        ntoken = yylex(); //Se lee el siguiente token.
+    }
+
+    fprintf(fptr, "%s", footer); //Se escribe en el pie del archivo.
+
+    fclose(fptr); //Se cierra el archivo antes de finalizar el programa.
+
+    return 1;
+}

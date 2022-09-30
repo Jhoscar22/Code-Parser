@@ -1,0 +1,549 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" href="../../Scanner/styles.css">
+  </head>
+  <body>
+    <span class="token-15">import</span>
+    <span class="token-17"> </span>
+    <span class="token-15">Alert</span>
+    <span class="token-17"> </span>
+    <span class="token-15">from</span>
+    <span class="token-17"> </span>
+    <span class="token-3">"./alert.js"</span>
+    <span class="token-8">;</span>
+    <br>
+    <br>
+    <span class="token-15">export</span>
+    <span class="token-17"> </span>
+    <span class="token-15">default</span>
+    <span class="token-17"> </span>
+    <span class="token-15">class</span>
+    <span class="token-17"> </span>
+    <span class="token-15">Modal</span>
+    <span class="token-8">{</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-15">constructor</span>
+    <span class="token-8">(</span>
+    <span class="token-8">)</span>
+    <span class="token-8">{</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-15">this</span>
+    <span class="token-8">.</span>
+    <span class="token-15">title</span>
+    <span class="token-17"> </span>
+    <span class="token-5">=</span>
+    <span class="token-17"> </span>
+    <span class="token-15">document</span>
+    <span class="token-8">.</span>
+    <span class="token-15">getElementById</span>
+    <span class="token-8">(</span>
+    <span class="token-4">'modal-title'</span>
+    <span class="token-8">)</span>
+    <span class="token-8">;</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-15">this</span>
+    <span class="token-8">.</span>
+    <span class="token-15">description</span>
+    <span class="token-17"> </span>
+    <span class="token-5">=</span>
+    <span class="token-17"> </span>
+    <span class="token-15">document</span>
+    <span class="token-8">.</span>
+    <span class="token-15">getElementById</span>
+    <span class="token-8">(</span>
+    <span class="token-4">'modal-description'</span>
+    <span class="token-8">)</span>
+    <span class="token-8">;</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-15">this</span>
+    <span class="token-8">.</span>
+    <span class="token-15">btn</span>
+    <span class="token-17"> </span>
+    <span class="token-5">=</span>
+    <span class="token-17"> </span>
+    <span class="token-15">document</span>
+    <span class="token-8">.</span>
+    <span class="token-15">getElementById</span>
+    <span class="token-8">(</span>
+    <span class="token-4">'modal-btn'</span>
+    <span class="token-8">)</span>
+    <span class="token-8">;</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-15">this</span>
+    <span class="token-8">.</span>
+    <span class="token-15">completed</span>
+    <span class="token-17"> </span>
+    <span class="token-5">=</span>
+    <span class="token-17"> </span>
+    <span class="token-15">document</span>
+    <span class="token-8">.</span>
+    <span class="token-15">getElementById</span>
+    <span class="token-8">(</span>
+    <span class="token-4">'modal-completed'</span>
+    <span class="token-8">)</span>
+    <span class="token-8">;</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-15">this</span>
+    <span class="token-8">.</span>
+    <span class="token-15">alert</span>
+    <span class="token-17"> </span>
+    <span class="token-5">=</span>
+    <span class="token-17"> </span>
+    <span class="token-15">new</span>
+    <span class="token-17"> </span>
+    <span class="token-15">Alert</span>
+    <span class="token-8">(</span>
+    <span class="token-4">'modal-alert'</span>
+    <span class="token-8">)</span>
+    <span class="token-8">;</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-15">this</span>
+    <span class="token-8">.</span>
+    <span class="token-15">todo</span>
+    <span class="token-17"> </span>
+    <span class="token-5">=</span>
+    <span class="token-17"> </span>
+    <span class="token-15">null</span>
+    <span class="token-8">;</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-8">}</span>
+    <br>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-15">setValues</span>
+    <span class="token-8">(</span>
+    <span class="token-15">todo</span>
+    <span class="token-8">)</span>
+    <span class="token-8">{</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-15">this</span>
+    <span class="token-8">.</span>
+    <span class="token-15">todo</span>
+    <span class="token-17"> </span>
+    <span class="token-5">=</span>
+    <span class="token-17"> </span>
+    <span class="token-15">todo</span>
+    <span class="token-8">;</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-15">this</span>
+    <span class="token-8">.</span>
+    <span class="token-15">title</span>
+    <span class="token-8">.</span>
+    <span class="token-15">value</span>
+    <span class="token-17"> </span>
+    <span class="token-5">=</span>
+    <span class="token-17"> </span>
+    <span class="token-15">todo</span>
+    <span class="token-8">.</span>
+    <span class="token-15">title</span>
+    <span class="token-8">;</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-15">this</span>
+    <span class="token-8">.</span>
+    <span class="token-15">description</span>
+    <span class="token-8">.</span>
+    <span class="token-15">value</span>
+    <span class="token-17"> </span>
+    <span class="token-5">=</span>
+    <span class="token-17"> </span>
+    <span class="token-15">todo</span>
+    <span class="token-8">.</span>
+    <span class="token-15">description</span>
+    <span class="token-8">;</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-15">this</span>
+    <span class="token-8">.</span>
+    <span class="token-15">completed</span>
+    <span class="token-8">.</span>
+    <span class="token-15">checked</span>
+    <span class="token-17"> </span>
+    <span class="token-5">=</span>
+    <span class="token-17"> </span>
+    <span class="token-15">todo</span>
+    <span class="token-8">.</span>
+    <span class="token-15">completed</span>
+    <span class="token-8">;</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-8">}</span>
+    <br>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-15">onClick</span>
+    <span class="token-8">(</span>
+    <span class="token-15">callback</span>
+    <span class="token-8">)</span>
+    <span class="token-8">{</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-15">this</span>
+    <span class="token-8">.</span>
+    <span class="token-15">btn</span>
+    <span class="token-8">.</span>
+    <span class="token-15">onclick</span>
+    <span class="token-17"> </span>
+    <span class="token-5">=</span>
+    <span class="token-17"> </span>
+    <span class="token-8">(</span>
+    <span class="token-8">)</span>
+    <span class="token-17"> </span>
+    <span class="token-5">=</span>
+    <span class="token-8">></span>
+    <span class="token-8">{</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-7">if</span>
+    <span class="token-8">(</span>
+    <span class="token-18">!</span>
+    <span class="token-15">this</span>
+    <span class="token-8">.</span>
+    <span class="token-15">title</span>
+    <span class="token-8">.</span>
+    <span class="token-15">value</span>
+    <span class="token-17"> </span>
+    <span class="token-6">||</span>
+    <span class="token-17"> </span>
+    <span class="token-18">!</span>
+    <span class="token-15">this</span>
+    <span class="token-8">.</span>
+    <span class="token-15">description</span>
+    <span class="token-8">.</span>
+    <span class="token-15">value</span>
+    <span class="token-8">)</span>
+    <span class="token-8">{</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-15">this</span>
+    <span class="token-8">.</span>
+    <span class="token-15">alert</span>
+    <span class="token-8">.</span>
+    <span class="token-15">show</span>
+    <span class="token-8">(</span>
+    <span class="token-4">'Title and description are required'</span>
+    <span class="token-8">)</span>
+    <span class="token-8">;</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-7">return</span>
+    <span class="token-8">;</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-8">}</span>
+    <br>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-18">$</span>
+    <span class="token-8">(</span>
+    <span class="token-4">'#modal'</span>
+    <span class="token-8">)</span>
+    <span class="token-8">.</span>
+    <span class="token-15">modal</span>
+    <span class="token-8">(</span>
+    <span class="token-4">'toggle'</span>
+    <span class="token-8">)</span>
+    <span class="token-8">;</span>
+    <br>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-15">callback</span>
+    <span class="token-8">(</span>
+    <span class="token-15">this</span>
+    <span class="token-8">.</span>
+    <span class="token-15">todo</span>
+    <span class="token-8">.</span>
+    <span class="token-15">id</span>
+    <span class="token-8">,</span>
+    <span class="token-17"> </span>
+    <span class="token-8">{</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-3">"title"</span>
+    <span class="token-8">:</span>
+    <span class="token-17"> </span>
+    <span class="token-15">this</span>
+    <span class="token-8">.</span>
+    <span class="token-15">title</span>
+    <span class="token-8">.</span>
+    <span class="token-15">value</span>
+    <span class="token-8">,</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-3">"description"</span>
+    <span class="token-8">:</span>
+    <span class="token-17"> </span>
+    <span class="token-15">this</span>
+    <span class="token-8">.</span>
+    <span class="token-15">description</span>
+    <span class="token-8">.</span>
+    <span class="token-15">value</span>
+    <span class="token-8">,</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-3">"completed"</span>
+    <span class="token-8">:</span>
+    <span class="token-17"> </span>
+    <span class="token-15">this</span>
+    <span class="token-8">.</span>
+    <span class="token-15">completed</span>
+    <span class="token-8">.</span>
+    <span class="token-15">checked</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-8">}</span>
+    <span class="token-8">)</span>
+    <span class="token-8">;</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-8">}</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-8">}</span>
+    <br>
+    <span class="token-8">}</span>
+  </body>
+</html>

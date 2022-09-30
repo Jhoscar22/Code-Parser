@@ -1,0 +1,610 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" href="../../Scanner/styles.css">
+  </head>
+  <body>
+    <span class="token-1">//Single-line comment</span>
+    <br>
+    <span class="token-2">/*Multi-line
+comment*/</span>
+    <br>
+    <span class="token-3">"double-quoted \"string\"\t"</span>
+    <br>
+    <span class="token-4">'single-quoted \'string\'\n'</span>
+    <br>
+    <span class="token-15">arithmetic</span>
+    <span class="token-17"> </span>
+    <span class="token-15">operators</span>
+    <span class="token-8">:</span>
+    <span class="token-17"> </span>
+    <span class="token-5">-</span>
+    <span class="token-17"> </span>
+    <span class="token-5">+</span>
+    <span class="token-17"> </span>
+    <span class="token-5">/</span>
+    <span class="token-17"> </span>
+    <span class="token-5">*</span>
+    <span class="token-17"> </span>
+    <span class="token-5">^</span>
+    <span class="token-17"> </span>
+    <span class="token-5">=</span>
+    <span class="token-17"> </span>
+    <span class="token-5"><<</span>
+    <span class="token-17"> </span>
+    <span class="token-5">>></span>
+    <br>
+    <span class="token-15">logical</span>
+    <span class="token-17"> </span>
+    <span class="token-15">operators</span>
+    <span class="token-8">:</span>
+    <span class="token-17"> </span>
+    <span class="token-6">==</span>
+    <span class="token-17"> </span>
+    <span class="token-6">!=</span>
+    <span class="token-17"> </span>
+    <span class="token-6"><=</span>
+    <span class="token-17"> </span>
+    <span class="token-6">>=</span>
+    <span class="token-17"> </span>
+    <span class="token-6">===</span>
+    <span class="token-17"> </span>
+    <span class="token-6">!==</span>
+    <span class="token-17"> </span>
+    <span class="token-6">||</span>
+    <span class="token-17"> </span>
+    <span class="token-6">&&</span>
+    <br>
+    <span class="token-15">reserved</span>
+    <span class="token-17"> </span>
+    <span class="token-15">words</span>
+    <span class="token-8">:</span>
+    <span class="token-17"> </span>
+    <span class="token-7">int</span>
+    <span class="token-17"> </span>
+    <span class="token-7">char</span>
+    <span class="token-17"> </span>
+    <span class="token-7">if</span>
+    <span class="token-17"> </span>
+    <span class="token-7">else</span>
+    <span class="token-17"> </span>
+    <span class="token-7">for</span>
+    <span class="token-17"> </span>
+    <span class="token-7">while</span>
+    <span class="token-17"> </span>
+    <span class="token-7">return</span>
+    <span class="token-17"> </span>
+    <span class="token-7">extern</span>
+    <span class="token-17"> </span>
+    <span class="token-7">#include</span>
+    <span class="token-17"> </span>
+    <span class="token-7">def</span>
+    <br>
+    <span class="token-15">delimiters</span>
+    <span class="token-8">:</span>
+    <span class="token-17"> </span>
+    <span class="token-8">(</span>
+    <span class="token-17"> </span>
+    <span class="token-8">)</span>
+    <span class="token-17"> </span>
+    <span class="token-8">[</span>
+    <span class="token-17"> </span>
+    <span class="token-8">]</span>
+    <span class="token-17"> </span>
+    <span class="token-8">{</span>
+    <span class="token-17"> </span>
+    <span class="token-8">}</span>
+    <span class="token-17"> </span>
+    <span class="token-8">;</span>
+    <span class="token-17"> </span>
+    <span class="token-8">:</span>
+    <span class="token-17"> </span>
+    <span class="token-8">,</span>
+    <span class="token-17"> </span>
+    <span class="token-8">.</span>
+    <span class="token-17"> </span>
+    <span class="token-8"><</span>
+    <span class="token-17"> </span>
+    <span class="token-8">></span>
+    <br>
+    <span class="token-15">binary</span>
+    <span class="token-8">:</span>
+    <span class="token-17"> </span>
+    <span class="token-9">0b010011110101</span>
+    <span class="token-17"> </span>
+    <span class="token-9">0b0.10011110101</span>
+    <br>
+    <span class="token-15">octal</span>
+    <span class="token-8">:</span>
+    <span class="token-17"> </span>
+    <span class="token-10">0o0474403</span>
+    <span class="token-17"> </span>
+    <span class="token-10">0o04.74403</span>
+    <br>
+    <span class="token-15">hexadecimal</span>
+    <span class="token-8">:</span>
+    <span class="token-17"> </span>
+    <span class="token-11">0xAF239ac6</span>
+    <span class="token-17"> </span>
+    <span class="token-11">0xAF23.9ac6</span>
+    <br>
+    <span class="token-15">decimal</span>
+    <span class="token-17"> </span>
+    <span class="token-15">scientific</span>
+    <span class="token-17"> </span>
+    <span class="token-15">notation</span>
+    <span class="token-8">:</span>
+    <span class="token-17"> </span>
+    <span class="token-12">-65.03e+17</span>
+    <br>
+    <span class="token-15">decimal</span>
+    <span class="token-17"> </span>
+    <span class="token-15">integers</span>
+    <span class="token-8">:</span>
+    <span class="token-17"> </span>
+    <span class="token-13">1729</span>
+    <br>
+    <span class="token-15">decimal</span>
+    <span class="token-17"> </span>
+    <span class="token-15">floating</span>
+    <span class="token-17"> </span>
+    <span class="token-15">numbers</span>
+    <span class="token-8">:</span>
+    <span class="token-17"> </span>
+    <span class="token-14">3.1415926</span>
+    <br>
+    <span class="token-15">c</span>
+    <span class="token-5">+</span>
+    <span class="token-5">+</span>
+    <span class="token-17"> </span>
+    <span class="token-15">variables</span>
+    <span class="token-8">:</span>
+    <span class="token-17"> </span>
+    <span class="token-15">var1</span>
+    <span class="token-8">,</span>
+    <span class="token-17"> </span>
+    <span class="token-15">descriptive_variable_name</span>
+    <br>
+    <span class="token-15">perl</span>
+    <span class="token-17"> </span>
+    <span class="token-15">variables</span>
+    <span class="token-8">:</span>
+    <span class="token-17"> </span>
+    <span class="token-16">$var_1</span>
+    <span class="token-8">,</span>
+    <span class="token-17"> </span>
+    <span class="token-16">$_2ndVariable</span>
+    <br>
+    <span class="token-15">empty</span>
+    <span class="token-17"> </span>
+    <span class="token-15">space</span>
+    <span class="token-8">:</span>
+    <span class="token-17"> </span>
+    <span class="token-18">\</span>
+    <span class="token-15">t</span>
+    <span class="token-17"> </span>
+    <span class="token-18">\</span>
+    <span class="token-15">n</span>
+    <br>
+    <span class="token-15">everything</span>
+    <span class="token-17"> </span>
+    <span class="token-7">else</span>
+    <span class="token-8">:</span>
+    <span class="token-17"> </span>
+    <span class="token-18">%</span>
+    <span class="token-18">%</span>
+    <span class="token-18">%</span>
+    <span class="token-18">%</span>
+    <span class="token-18">%</span>
+    <span class="token-18">%</span>
+    <span class="token-18">%</span>
+    <br>
+    <br>
+    <span class="token-7">#include</span>
+    <span class="token-17"> </span>
+    <span class="token-8"><</span>
+    <span class="token-15">stdio</span>
+    <span class="token-8">.</span>
+    <span class="token-15">h</span>
+    <span class="token-8">></span>
+    <br>
+    <span class="token-7">#include</span>
+    <span class="token-17"> </span>
+    <span class="token-8"><</span>
+    <span class="token-15">string</span>
+    <span class="token-8">.</span>
+    <span class="token-15">h</span>
+    <span class="token-8">></span>
+    <br>
+    <br>
+    <span class="token-16">$_P3rl_var1abl3</span>
+    <br>
+    <br>
+    <br>
+    <span class="token-15">cout</span>
+    <span class="token-17"> </span>
+    <span class="token-5"><<</span>
+    <span class="token-17"> </span>
+    <span class="token-3">"hello\n"</span>
+    <span class="token-8">;</span>
+    <br>
+    <br>
+    <span class="token-7">def</span>
+    <span class="token-17"> </span>
+    <span class="token-15">promedio</span>
+    <span class="token-8">(</span>
+    <span class="token-15">a</span>
+    <span class="token-8">,</span>
+    <span class="token-17"> </span>
+    <span class="token-15">b</span>
+    <span class="token-8">)</span>
+    <span class="token-8">:</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-7">return</span>
+    <span class="token-17"> </span>
+    <span class="token-8">(</span>
+    <span class="token-15">a</span>
+    <span class="token-17"> </span>
+    <span class="token-5">+</span>
+    <span class="token-17"> </span>
+    <span class="token-15">b</span>
+    <span class="token-8">)</span>
+    <span class="token-5">/</span>
+    <span class="token-14">2.0</span>
+    <br>
+    <br>
+    <span class="token-7">extern</span>
+    <span class="token-17"> </span>
+    <span class="token-7">int</span>
+    <span class="token-17"> </span>
+    <span class="token-15">yylex</span>
+    <span class="token-8">(</span>
+    <span class="token-8">)</span>
+    <span class="token-8">;</span>
+    <br>
+    <span class="token-7">extern</span>
+    <span class="token-17"> </span>
+    <span class="token-7">int</span>
+    <span class="token-17"> </span>
+    <span class="token-15">yylineno</span>
+    <span class="token-8">;</span>
+    <br>
+    <span class="token-7">extern</span>
+    <span class="token-17"> </span>
+    <span class="token-7">char</span>
+    <span class="token-17"> </span>
+    <span class="token-5">*</span>
+    <span class="token-15">yytext</span>
+    <span class="token-8">;</span>
+    <br>
+    <br>
+    <span class="token-7">char</span>
+    <span class="token-17"> </span>
+    <span class="token-15">header</span>
+    <span class="token-8">[</span>
+    <span class="token-8">]</span>
+    <span class="token-17"> </span>
+    <span class="token-5">=</span>
+    <br>
+    <span class="token-3">"&lt!DOCTYPE HTML&gt\n"</span>
+    <br>
+    <span class="token-3">"&lthtml&gt\n"</span>
+    <br>
+    <span class="token-3">"  &ltbody&gt\n"</span>
+    <span class="token-8">;</span>
+    <br>
+    <br>
+    <span class="token-7">char</span>
+    <span class="token-17"> </span>
+    <span class="token-15">footer</span>
+    <span class="token-8">[</span>
+    <span class="token-8">]</span>
+    <span class="token-17"> </span>
+    <span class="token-5">=</span>
+    <br>
+    <span class="token-3">"  &lt/body&gt\n"</span>
+    <br>
+    <span class="token-3">"&lt/html&gt"</span>
+    <span class="token-8">;</span>
+    <br>
+    <br>
+    <span class="token-7">int</span>
+    <span class="token-17"> </span>
+    <span class="token-15">main</span>
+    <span class="token-8">(</span>
+    <span class="token-8">)</span>
+    <span class="token-8">{</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-7">int</span>
+    <span class="token-17"> </span>
+    <span class="token-15">ntoken</span>
+    <span class="token-8">,</span>
+    <span class="token-17"> </span>
+    <span class="token-15">vtoken</span>
+    <span class="token-8">;</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-15">FILE</span>
+    <span class="token-17"> </span>
+    <span class="token-5">*</span>
+    <span class="token-15">fptr</span>
+    <span class="token-8">;</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-15">fptr</span>
+    <span class="token-17"> </span>
+    <span class="token-5">=</span>
+    <span class="token-17"> </span>
+    <span class="token-15">fopen</span>
+    <span class="token-8">(</span>
+    <span class="token-3">"index.html"</span>
+    <span class="token-8">,</span>
+    <span class="token-17"> </span>
+    <span class="token-3">"w"</span>
+    <span class="token-8">)</span>
+    <span class="token-8">;</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-15">fprintf</span>
+    <span class="token-8">(</span>
+    <span class="token-15">fptr</span>
+    <span class="token-8">,</span>
+    <span class="token-17"> </span>
+    <span class="token-3">"%s"</span>
+    <span class="token-8">,</span>
+    <span class="token-17"> </span>
+    <span class="token-15">header</span>
+    <span class="token-8">)</span>
+    <span class="token-8">;</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <br>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-15">ntoken</span>
+    <span class="token-17"> </span>
+    <span class="token-5">=</span>
+    <span class="token-17"> </span>
+    <span class="token-15">yylex</span>
+    <span class="token-8">(</span>
+    <span class="token-8">)</span>
+    <span class="token-8">;</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-7">while</span>
+    <span class="token-17"> </span>
+    <span class="token-8">(</span>
+    <span class="token-15">ntoken</span>
+    <span class="token-8">)</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-8">{</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-1">//printf("%d, %s\n", ntoken, yytext);</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-7">if</span>
+    <span class="token-17"> </span>
+    <span class="token-8">(</span>
+    <span class="token-15">strcmp</span>
+    <span class="token-8">(</span>
+    <span class="token-15">yytext</span>
+    <span class="token-8">,</span>
+    <span class="token-17"> </span>
+    <span class="token-3">"\n"</span>
+    <span class="token-8">)</span>
+    <span class="token-6">==</span>
+    <span class="token-13">0</span>
+    <span class="token-8">)</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-8">{</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-15">fprintf</span>
+    <span class="token-8">(</span>
+    <span class="token-15">fptr</span>
+    <span class="token-8">,</span>
+    <span class="token-17"> </span>
+    <span class="token-3">"    &ltbr&gt\n"</span>
+    <span class="token-8">)</span>
+    <span class="token-8">;</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-8">}</span>
+    <span class="token-7">else</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-8">{</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-15">fprintf</span>
+    <span class="token-8">(</span>
+    <span class="token-15">fptr</span>
+    <span class="token-8">,</span>
+    <span class="token-17"> </span>
+    <span class="token-3">"    &ltspan class=\"token-%d\"&gt%s&lt/span&gt\n"</span>
+    <span class="token-8">,</span>
+    <span class="token-17"> </span>
+    <span class="token-15">ntoken</span>
+    <span class="token-8">,</span>
+    <span class="token-17"> </span>
+    <span class="token-15">yytext</span>
+    <span class="token-8">)</span>
+    <span class="token-8">;</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-8">}</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-15">ntoken</span>
+    <span class="token-17"> </span>
+    <span class="token-5">=</span>
+    <span class="token-17"> </span>
+    <span class="token-15">yylex</span>
+    <span class="token-8">(</span>
+    <span class="token-8">)</span>
+    <span class="token-8">;</span>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-8">}</span>
+    <br>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-15">fprintf</span>
+    <span class="token-8">(</span>
+    <span class="token-15">fptr</span>
+    <span class="token-8">,</span>
+    <span class="token-17"> </span>
+    <span class="token-3">"%s"</span>
+    <span class="token-8">,</span>
+    <span class="token-17"> </span>
+    <span class="token-15">footer</span>
+    <span class="token-8">)</span>
+    <span class="token-8">;</span>
+    <br>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-15">fclose</span>
+    <span class="token-8">(</span>
+    <span class="token-15">fptr</span>
+    <span class="token-8">)</span>
+    <span class="token-8">;</span>
+    <br>
+    <br>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-17"> </span>
+    <span class="token-7">return</span>
+    <span class="token-17"> </span>
+    <span class="token-13">1</span>
+    <span class="token-8">;</span>
+    <br>
+    <span class="token-8">}</span>
+  </body>
+</html>

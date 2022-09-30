@@ -1,0 +1,81 @@
+body {
+    font-size: 15pt;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    color: black;
+    line-height: 20pt;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    padding-top: 10pt;
+}
+
+.token-1 {
+    background-color: rgb(169, 175, 169);
+}
+
+.token-2 {
+    background-color: rgb(114, 122, 114);
+}
+
+.token-3 {
+    background-color: rgb(187, 255, 0);
+}
+
+.token-4 {
+    background-color: rgb(153, 206, 8);
+}
+
+.token-5 {
+    background-color: rgb(235, 231, 23);
+}
+
+.token-6 {
+    background-color: rgb(59, 119, 231);
+}
+
+.token-7 {
+    background-color: rgb(211, 19, 77);
+}
+
+.token-8 {
+    background-color: rgb(7, 148, 148);
+}
+
+.token-9 {
+    background-color: rgb(16, 100, 89);
+}
+
+.token-10 {
+    background-color: rgb(36, 144, 69);
+}
+
+.token-11 {
+    background-color: rgb(52, 136, 13);
+}
+
+.token-12 {
+    background-color: rgb(171, 214, 29);
+}
+
+.token-13 {
+    background-color: rgb(216, 101, 55);
+}
+
+.token-14 {
+    background-color: rgb(197, 67, 28);
+}
+
+.token-15 {
+    background-color: rgb(180, 48, 125);
+}
+
+.token-16 {
+    background-color: rgb(153, 16, 73);
+}
+
+.token-17 {
+    background-color: rgb(251, 237, 31);
+}
+
+.token-18 {
+    background-color: rgb(253, 69, 244);
+}

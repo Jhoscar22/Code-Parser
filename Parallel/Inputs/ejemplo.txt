@@ -1,0 +1,73 @@
+//Single-line comment
+/*Multi-line
+comment*/
+"double-quoted \"string\"\t"
+'single-quoted \'string\'\n'
+arithmetic operators: - + / * ^ = << >>
+logical operators: == != <= >= === !== || &&
+reserved words: int char if else for while return extern #include def
+delimiters: ( ) [ ] { } ; : , . < >
+binary: 0b010011110101 0b0.10011110101
+octal: 0o0474403 0o04.74403
+hexadecimal: 0xAF239ac6 0xAF23.9ac6
+decimal scientific notation: -65.03e+17
+decimal integers: 1729
+decimal floating numbers: 3.1415926
+c++ variables: var1, descriptive_variable_name
+perl variables: $var_1, $_2ndVariable
+empty space: \t \n
+everything else: %%%%%%%
+
+#include <stdio.h>
+#include <string.h>
+
+$_P3rl_var1abl3
+
+
+cout << "hello\n";
+
+def promedio(a, b):
+    return (a + b)/2.0
+
+extern int yylex();
+extern int yylineno;
+extern char *yytext;
+
+char header[] =
+"&lt!DOCTYPE HTML&gt\n"
+"&lthtml&gt\n"
+"  &ltbody&gt\n";
+
+char footer[] =
+"  &lt/body&gt\n"
+"&lt/html&gt";
+
+int main(){
+    
+    int ntoken, vtoken;
+    FILE *fptr;
+    fptr = fopen("index.html", "w");
+    fprintf(fptr, "%s", header);
+    
+
+    ntoken = yylex();
+    while (ntoken)
+    {
+        //printf("%d, %s\n", ntoken, yytext);
+        if (strcmp(yytext, "\n")==0)
+        {
+            fprintf(fptr, "    &ltbr&gt\n");
+        }else
+        {
+            fprintf(fptr, "    &ltspan class=\"token-%d\"&gt%s&lt/span&gt\n", ntoken, yytext);
+        }
+        
+        ntoken = yylex();
+    }
+
+    fprintf(fptr, "%s", footer);
+
+    fclose(fptr);
+
+    return 1;
+}
