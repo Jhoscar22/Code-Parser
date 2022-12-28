@@ -52,6 +52,8 @@ A detailed description of the metodology and findings can be found in **Act5.3-I
     <img width="40px" height="40px" src="https://ico.now.sh/gnu/000000"/>
     <img width="40px" height="40px" src="https://skillicons.dev/icons?i=c"/>
     <img width="40px" height="40px" src="https://skillicons.dev/icons?i=cpp"/>
+    <img width="40px" height="40px" src="https://skillicons.dev/icons?i=html"/>
+    <img width="40px" height="40px" src="https://skillicons.dev/icons?i=css"/>
     <img width="40px" height="40px" src="https://skillicons.dev/icons?i=java"/>
     <img width="40px" height="40px" src="https://skillicons.dev/icons?i=git"/>
     <img width="40px" height="40px" src="https://skillicons.dev/icons?i=vscode"/>
