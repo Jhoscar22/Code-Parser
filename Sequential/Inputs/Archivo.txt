@@ -12,16 +12,16 @@ extern int yylineno;
 extern char *yytext;
 
 char header[] = //Encabezado del archivo html
-"<!DOCTYPE HTML>\n"
-"<html>\n"
-"  <head>\n"
-"    <link rel=\"stylesheet\" href=\"../../Scanner/styles.css\">\n"
-"  </head>\n"
-"  <body>\n";
+"&lt!DOCTYPE HTML&gt\n"
+"&lthtml&gt\n"
+"  &lthead&gt\n"
+"    &ltlink rel=\"stylesheet\" href=\"../../Scanner/styles.css\"&gt\n"
+"  &lt/head&gt\n"
+"  &ltbody&gt\n";
 
 char footer[] = //Pie del archivo html
-"  </body>\n"
-"</html>";
+"  &lt/body&gt\n"
+"&lt/html&gt";
 
 int main(int argc, char **argv){
     char file_name_output[99];

@@ -38,7 +38,10 @@ class MultithreadingScanner implements Runnable {
             // SCAN ALL OF THE FILES ASSIGNED TO THIS THREAD
             for (int i = this.first; i <= this.last; i++) {
                 if (this.files[i].isFile() /* IGNORE DIRECTORIES */) {
-                    ProcessBuilder builder = new ProcessBuilder("cmd.exe", "/c", "type " + this.files[i].getAbsolutePath() + " | " + myscanner.getAbsolutePath() + " .\\Outputs\\" + this.files[i].getName() + ".html").inheritIO();
+                    // UNIX
+                    ProcessBuilder builder = new ProcessBuilder("zsh", "-c", "type " + this.files[i].getAbsolutePath() + " | " + myscanner.getAbsolutePath() + " ./Outputs/" + this.files[i].getName() + ".html").inheritIO();
+                    // WINDOWS
+                    // ProcessBuilder builder = new ProcessBuilder("cmd.exe", "/c", "type " + this.files[i].getAbsolutePath() + " | " + myscanner.getAbsolutePath() + " .\\Outputs\\" + this.files[i].getName() + ".html").inheritIO();
                     builder.start();
                 }
             }
@@ -55,9 +58,9 @@ public class parSynt {
         long start = System.currentTimeMillis();
 
         // GET INPUT FILES AND SCANNER
-        String directory = "C:\\Users\\oscar\\Documentos\\IMC_Proyecto\\";
-        File[] files = new File(directory + "Parallel\\Inputs").listFiles();
-        File myscanner = new File(directory + "Scanner\\scannerV2.exe");
+        String directory = "/Users/oscar/Developer/Extras/Code-Parser/";
+        File[] files = new File(directory + "Parallel/Inputs").listFiles();
+        File myscanner = new File(directory + "Scanner/scanner-app");
 
         // INITIALIZE VARIABLES
         int fileCount = files.length;

@@ -19,6 +19,7 @@ int main(){
     patterns.open("patterns.txt"); //Se abre el archivo que contiene las expresiones regulares.
     while (getline(patterns, key)) //Mientras haya líneas restantes en el archivo de lectura.
     {
+        key.erase(key.size() - 1);
         keys.push_back(key); //Almacena la línea en un vector de strings.
     }
     patterns.close(); //Cierra el archivo de lectura.
@@ -30,10 +31,10 @@ int main(){
     int i; //Variable de tipo entero sobre la que itera el ciclo for.
     for (i = 0; i < keys.size(); i++) //Ciclo que itera una vez por cada elemento del vector de strings.
     {
-        rules << keys[i] << " return " << i+1 << ";\n"; //Crea una nueva regla que regrese un entero en orden ascendente.
+        rules << keys[i] << "\treturn " << i+1 << ";\n"; //Crea una nueva regla que regrese un entero en orden ascendente.
     }
 
-    rules << "\n%%\n\nint num_tokens = " << i << ";\n\nint yywrap(void){\nreturn 1;\n}"; //Escribe una función en el final del archivo.
+    rules << "\n%%\n\nint num_tokens = " << i << ";\n\nint yywrap(void){\n\treturn 1;\n}"; //Escribe una función en el final del archivo.
 
     rules.close(); //Se cierra el archivo de escritura
 

@@ -3,8 +3,8 @@
 comment*/
 "double-quoted \"string\"\t"
 'single-quoted \'string\'\n'
-arithmetic operators: - + / * ^ = << >>
-logical operators: == != <= >= === !== || &&
+arithmetic operators: - + / * ^ = % << >>
+logical operators: == != <= >= === !== || && !
 reserved words: int char if else for while return extern #include def
 delimiters: ( ) [ ] { } ; : , . < >
 binary: 0b010011110101 0b0.10011110101
@@ -15,8 +15,8 @@ decimal integers: 1729
 decimal floating numbers: 3.1415926
 c++ variables: var1, descriptive_variable_name
 perl variables: $var_1, $_2ndVariable
-empty space: \t \n
-everything else: %%%%%%%
+empty space:      
+everything else: # ?
 
 #include <stdio.h>
 #include <string.h>
@@ -27,7 +27,7 @@ $_P3rl_var1abl3
 cout << "hello\n";
 
 def promedio(a, b):
-    return (a + b)/2.0
+    return (a + b) / 2.0
 
 extern int yylex();
 extern int yylineno;

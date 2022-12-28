@@ -1,0 +1,10 @@
+# Binaries
+app
+scanner-app
+rules.l
+lex.yy.c
+generator-app
+seqSynt.class
+parSynt.class
+MultithreadingScanner.class
+Outputs/

@@ -12,9 +12,9 @@ public class seqSynt {
         long start = System.currentTimeMillis();
 
         // GET INPUT FILES AND SCANNER
-        String directory = "C:\\Users\\oscar\\Documentos\\IMC_Proyecto\\";
-        File[] files = new File(directory + "Sequential\\Inputs").listFiles();
-        File myscanner = new File(directory + "Scanner\\scannerV2.exe");
+        String directory = "/Users/oscar/Developer/Extras/Code-Parser/";
+        File[] files = new File(directory + "Sequential/Inputs").listFiles();
+        File myscanner = new File(directory + "Scanner/scanner-app");
 
         // INITIALIZE VARIABLES
         int fileCount = files.length;
@@ -22,7 +22,10 @@ public class seqSynt {
         for (int i = 0; i < fileCount; i++) {
             if (files[i].isFile() /* IGNORE DIRECTORIES */) {
                 try {
-                    ProcessBuilder builder = new ProcessBuilder("cmd.exe", "/c", "type " + files[i].getAbsolutePath() + " | " + myscanner.getAbsolutePath() + " .\\Outputs\\" + files[i].getName() + ".html").inheritIO();
+                    // UNIX
+                    ProcessBuilder builder = new ProcessBuilder("zsh", "-c", "cat " + "./Inputs/" + files[i].getName() + " | " + myscanner.getAbsolutePath() + " ./Outputs/" + files[i].getName() + ".html").inheritIO();
+                    // WINDOWS
+                    // ProcessBuilder builder = new ProcessBuilder("cmd.exe", "/c", "type " + files[i].getAbsolutePath() + " | " + myscanner.getAbsolutePath() + " .\\Outputs\\" + files[i].getName() + ".html").inheritIO();
                     builder.start();
                 } catch (Exception e) {
                     System.out.println("Exceptio while scanning file: " + files[i].getAbsolutePath() + "\n" + e);

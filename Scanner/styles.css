@@ -3,9 +3,14 @@ body {
     font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
     color: black;
     line-height: 20pt;
-    padding-left: 10pt;
-    padding-right: 10pt;
     padding-top: 10pt;
+}
+
+span {
+    white-space: pre-wrap;
+    margin: 0;
+    /*margin-left: -8px; This is a way to remove spacing between spans without html comments*/
+    padding: 0;
 }
 
 .token-1 {
@@ -14,6 +19,7 @@ body {
 
 .token-2 {
     background-color: rgb(114, 122, 114);
+    white-space: pre-wrap;
 }
 
 .token-3 {
@@ -29,7 +35,7 @@ body {
 }
 
 .token-6 {
-    background-color: rgb(59, 119, 231);
+    background-color: rgba(59, 119, 231, 0.2);
 }
 
 .token-7 {
